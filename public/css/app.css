@@ -1,0 +1,38 @@
+html, body {
+	height: 100%;
+}
+
+i.icon#logo {
+    font-size: 2em;
+}
+
+.container.main {
+    margin-top: 7em;
+}
+
+#delete {
+    display: inline;
+}
+
+p {
+    word-break: break-all;
+}
+
+#navbar {
+    border-radius: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#date {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#content {
+    margin-top: 1em;
+    margin-bottom: 3em;
+}

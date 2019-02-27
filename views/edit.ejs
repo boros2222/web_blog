@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="ui main text container">
+    <div class="ui huge header"><%= blog.title %> módosítása</div>
+
+    <form class="ui form segment" action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+        <div class="field">
+            <label>Cím</label>
+            <input type="text" name="blog[title]" placeholder="cím" value="<%= blog.title %>" required>
+        </div>
+        <div class="field">
+            <label>Kép</label>
+            <input type="text" name="blog[image]" placeholder="kép url" value="<%= blog.image %>">
+        </div>
+        <div class="field">
+            <label>Tartalom</label>
+            <textarea name="blog[body]" required><%= blog.body %></textarea>
+        </div>
+        <input class="ui inverted button blue" type="submit">
+    </form>
+
+</div>
+
+<% include partials/footer %>
