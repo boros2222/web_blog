@@ -100,6 +100,6 @@ app.delete("/blogs/:id", function(req, res) {
 });
 
 // Start listening
-app.listen(3001, "0.0.0.0", function() {
+app.listen(3001, "localhost", function() {
     console.log("Blog has started!");
 });
